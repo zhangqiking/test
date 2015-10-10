@@ -10,11 +10,11 @@ def sub_sort(array,low,high):
     array[low]=key
     return low
 
-def quick_sort(array,low,high):
+def quick_sort(array,low,high):               #递归实现
     if low<high:
         key_index=sub_sort(array,low,high)
-        quick_sort(array,low,key_index)
-        quick_sort(array,key_index+1,high)
+        quick_sort(array,low,key_index)       #对较小的部分排序
+        quick_sort(array,key_index+1,high)    #对较大的部分排序
 
 if __name__=='__main__':
     array=[8,10,9,6,4,16,5,13,26,18,2,45,34,23,1,7,3]
