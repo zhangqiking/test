@@ -68,11 +68,12 @@ result=link.getitem(2)
 print result.val
 link.delete_item(2)
 link.showlist()
-'''
+
 link.insert(90,5)
 link.showlist()
-
-
+'''
+p=link
+print p
 
 
 
