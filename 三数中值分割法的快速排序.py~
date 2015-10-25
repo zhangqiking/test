@@ -19,7 +19,7 @@ def median3(array,left,right):
     swap(array,center,right)
     return array[right]
 
-def sub_sort(array,low,high):  #处理基准情况
+def sub_sort(array,low,high):
     key=median3(array,low,high)
     h=high
     high=high-1
